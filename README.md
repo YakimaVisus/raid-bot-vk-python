@@ -25,7 +25,7 @@ pip install vk_api
 
 ![Иллюстрация к проекту](https://github.com/YakimaVisus/raid-bot-vk-python/blob/main/Opera%20Снимок_2022-02-05_135039_vk.com.png)  
 
-#Работает!!!!  
+#Работает
 
 ![Иллюстрация к проекту](https://github.com/YakimaVisus/raid-bot-vk-python/blob/main/work.png)  
 
