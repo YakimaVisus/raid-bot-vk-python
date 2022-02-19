@@ -63,8 +63,37 @@ for event in longpoll.listen():
                 while True:
                     sleep = random.uniform(2.199, 3.399)
                     keyboard = VkKeyboard()
-                    keyboard.add_button('получить стикеры https://vto.pe vto.pe', VkKeyboardColor.NEGATIVE)
+                    keyboard.add_button("получить стикеры https://vto.pe vto.pe", color=vk_api.keyboard.VkKeyboardColor.POSITIVE)
+                    keyboard.add_button("получить стикеры https://vto.pe vto.pe", color=vk_api.keyboard.VkKeyboardColor.NEGATIVE)
+
+                    keyboard.add_line()#Обозначает добавление новой строки
+                    keyboard.add_button("получить стикеры https://vto.pe vto.pe", color=vk_api.keyboard.VkKeyboardColor.PRIMARY)
+                    keyboard.add_button("получить стикеры https://vto.pe vto.pe", color=vk_api.keyboard.VkKeyboardColor.POSITIVE)
+
+                    keyboard.add_line()
+                    keyboard.add_button("получить стикеры https://vto.pe vto.pe", color=vk_api.keyboard.VkKeyboardColor.POSITIVE)
+                    keyboard.add_button("получить стикеры https://vto.pe vto.pe", color=vk_api.keyboard.VkKeyboardColor.PRIMARY)
+                    keyboard.add_button("получить стикеры https://vto.pe vto.pe", color=vk_api.keyboard.VkKeyboardColor.POSITIVE)
+
+                    keyboard.add_line()#Обозначает добавление новой строки
+                    keyboard.add_button("получить стикеры https://vto.pe vto.pe", color=vk_api.keyboard.VkKeyboardColor.POSITIVE)
+                    keyboard.add_button("Yakima Visus https://vto.pe vto.pe", color=vk_api.keyboard.VkKeyboardColor.PRIMARY)
+
+                    keyboard.add_line()
+                    keyboard.add_button("НАС ЕБЁТ vto.pe", color=vk_api.keyboard.VkKeyboardColor.NEGATIVE)
+                    keyboard.add_button("YAKIMA vto.pe", color=vk_api.keyboard.VkKeyboardColor.PRIMARY)
+                    keyboard.add_button("VISUS https://vto.pe vto.pe", color=vk_api.keyboard.VkKeyboardColor.NEGATIVE)
+
+                    keyboard.add_line()
+                    keyboard.add_button("получить стикеры https://vto.pe vto.pe", color=vk_api.keyboard.VkKeyboardColor.NEGATIVE)
+                    keyboard.add_button("получить стикеры https://vto.pe vto.pe", color=vk_api.keyboard.VkKeyboardColor.POSITIVE)
+                    keyboard.add_button("получить стикеры https://vto.pe vto.pe", color=vk_api.keyboard.VkKeyboardColor.PRIMARY)
+
+                    keyboard.add_line()
+                    keyboard.add_button("получить стикеры https://vto.pe vto.pe", color=vk_api.keyboard.VkKeyboardColor.NEGATIVE)
+                    keyboard.add_button("получить стикеры https://vto.pe vto.pe", color=vk_api.keyboard.VkKeyboardColor.PRIMARY)
+                    keyboard.add_button("получить ст https://vto.pe yakima_visus", color=vk_api.keyboard.VkKeyboardColor.POSITIVE)
                     keyboard.get_keyboard()
-                    vk.method("messages.send", {"peer_id": id, 'random_id':get_random_id(), "message": f"Хелоу Воралд вас ебет Yakima Visus @all", "attachment": 'wall-186110456_2',"keyboard": keyboard.get_keyboard()})
+                    vk.method("messages.send", {"peer_id": id, 'random_id':get_random_id(), "message": f"Хелоу Воралд вас ебет Yakima Visus @all", "attachment": 'wall-186110456_27',"keyboard": keyboard.get_keyboard()})
                     time.sleep(sleep)
 
