@@ -60,6 +60,7 @@ for event in longpoll.listen():
             
             print(message)
             if dey == 'chat_invite_user':
+                print ('Cпам идет в беседу...', 'Айди беседы:', id) 
                 while True:
                     sleep = random.uniform(2.199, 3.399)
                     keyboard = VkKeyboard()
